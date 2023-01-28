@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block internal_user %}
+<p align="center">
+    <a href="{{ url_for('blueprint_report.perehod') }}">работа с отчетами </a><br><br>
+    <a href="{{ url_for('blueprint_report.zaprosi') }}">работа с запросами<br><br></a>
+    <a href="{{url_for('blueprint_order.order_details')}}"> Оформление заказа </a><br><br>
+
+    <a href="/exit"> Нажмите для выхода из системы</a>
+</p>
+{% endblock %}

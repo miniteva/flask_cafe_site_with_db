@@ -1,0 +1,15 @@
+{
+  "admin": [
+    "blueprint_report"
+  ],
+
+
+  "worker": [
+    "blueprint_report.start_report","blueprint_order"
+  ],
+
+
+  "external": [
+    "blueprint_report.menu"
+]
+}

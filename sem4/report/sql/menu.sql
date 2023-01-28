@@ -1,0 +1,1 @@
+select BL_id,valuee,weigh,nazvanie from menu

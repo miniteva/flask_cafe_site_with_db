@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report_result</title>
+    <link type="text/css" href="static/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1 align="center">выбор отчета </h1><br><br>
+    <a href="{{ url_for('blueprint_report.create_rep1') }}">создание отчета за выбранный месяц</a><br><br>
+    <a href="{{ url_for('blueprint_report.view_rep1') }}">просмотр отчета за выбранный месяц</a><br><br>
+    <a href="{{ url_for('blueprint_report.queries') }}">просмотр отчета за выбранный месяц(запрос)</a><br><br>
+    <div align="center">
+        <a href="{{ url_for('menu_choice') }}">Возврат в меню</a>
+    </div>
+</body>
+</html>

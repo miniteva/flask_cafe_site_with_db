@@ -1,0 +1,1 @@
+insert order_line values(NULL, '$prod_id','$prod_amount','$prod_amount', '$order_id')

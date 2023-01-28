@@ -1,0 +1,1 @@
+select nazvanie, valuee from menu where BL_id = '$prod_id'

@@ -1,0 +1,32 @@
+h1 {
+    font-size: 16pt;
+    color: blue;
+    font-weight: bold
+}
+h2 {
+    font-size: 14pt;
+    color: red
+}
+
+label {
+    font-size: 14pt;
+    color: red
+}
+
+td {
+    font-family: 'Consolas';
+    font-size: 12pt;
+    color: #00FFFF;
+}
+
+td.border {
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 12pt;
+    color: black;
+}
+
+input.submit {
+    color: blue;
+    font-weight: bold
+}

@@ -1,0 +1,1 @@
+select BL_id,quantity,'value' where OR_id='$input_product'

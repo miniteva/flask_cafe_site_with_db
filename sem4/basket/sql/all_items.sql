@@ -1,0 +1,1 @@
+select BL_id, nazvanie, valuee from menu

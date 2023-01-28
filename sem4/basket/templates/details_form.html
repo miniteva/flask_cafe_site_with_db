@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Детали заказа</title>
+  <link type="text/css" rel="stylesheet" href="static/sem2.css">
+</head>
+<body>
+<center>
+    <h2>Параметры заказа</h2>
+    <form action="" method="POST">
+        <label for="stol_nom">Введите номер стола</label>
+        <input name="stol_nom" id="stol_nom" type="text" placeholder="номер стола"><br><br>
+        <label>Введите зал</label>
+        <select name="select"> <!--Supplement an id here instead of using 'name'-->
+          <option selected disabled>Выберите зал</option>
+            <option value="1" >VIP</option>
+            <option value="2" >для курящих</option>
+            <option value="3" >веранда</option>
+            <option value="4" >для некурящих</option>
+
+        </select><br>
+
+            <br>
+        <input type="submit"  value="Отправить">
+
+    </form>
+     <div align="center">
+  <br><br><br>
+  <a href="{{url_for('blueprint_order.order_index')}}">Оформление заказа </a>
+</div>
+</center>
+</body>
+</html>

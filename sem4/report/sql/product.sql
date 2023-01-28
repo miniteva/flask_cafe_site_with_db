@@ -1,0 +1,1 @@
+select OR_id, S_id, officiant_id,datakogda,stoimostb from orderr where month(datakogda) = '$input_product'

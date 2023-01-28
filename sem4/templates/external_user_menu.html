@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block external_user %}
+<p align="center">
+    <a href="{{ url_for('blueprint_report.menu') }}">Просмотр меню</a><br><br>
+
+    <a href="/exit"> Нажмите для выхода из системы</a>
+</p>
+{% endblock %}

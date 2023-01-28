@@ -1,0 +1,1 @@
+insert orderr values(NULL, '$stol_nom', '$user_id', '$hall_id' ,'$order_date')

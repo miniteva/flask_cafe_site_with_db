@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр отчетов</title>
+</head>
+<body>
+        <form action="", method ="POST">
+        <h2 align="center", method = POST>Меню отчетов</h2>
+        <center>
+            Введите год:
+            <input type="number" name = input_year placeholder = year><br><br>
+            Введите месяц:
+            <input type="number" name = input_month placeholder = month><br><br>
+            <input type="submit" value="Просмотреть">
+            <br><br><br>
+            <a href={{url_for('blueprint_report.start_report')}}> Вернуться в меню отчетов</a>
+            <br><br><br>
+            <a href={{url_for('menu_choice')}}> Вернуться в главное меню</a>
+        </center>
+    </form>
+</body>
+</html>
