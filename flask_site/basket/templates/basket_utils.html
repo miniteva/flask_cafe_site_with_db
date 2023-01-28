@@ -1,0 +1,27 @@
+ {%macro render_item(item, show_form=False, show_amount=False) %}
+<div style="border-style: solid; border-color: black; margin: 5px">
+    <p>
+        <span style="color: black">Название: </span>
+        <span style="color: green">{{item['nazvanie']}} </span>
+        <span style="color: black">Цена: </span>
+        <span style="color: green">{{item['valuee']}} </span>
+        {% if show_amount%}
+        <span style="color: black">Количество: </span>
+        <span style="color: green">{{item['amount']}} </span>
+        {% endif %}
+    </p>
+
+    {% if show_form %}
+    <div>
+        <form action="" method="post">
+            <input type="hidden" name="prod_id" value="{{ item['BL_id'] }}">
+            <label for="kolvo">количество </label>
+            <input type="number" name="kolvo" id="kolvo">
+            <input type="submit" name="kolvo" value="Добавить">
+
+
+        </form>
+    </div>
+    {% endif %}
+</div>
+ {% endmacro %}

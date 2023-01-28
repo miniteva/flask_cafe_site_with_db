@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>отчет</title>
+</head>
+<body>
+
+<h1>ваш отчет </h1>
+<table border = 1 width = 70%>
+    <tr>
+        {%for column in schema%}
+        <td class="table-title"> {{column}} </td>
+        {%endfor%}
+    </tr>
+    {% for line in result %}
+    <tr>
+        {%for column in line%}
+        <td> {{column}} </td>
+        {%endfor%}
+    </tr>
+    {%endfor%}
+</table>
+    <a href="{{ url_for('blueprint_report.perehod') }}">назад</a><br><br>
+
+</body>
+</html>
